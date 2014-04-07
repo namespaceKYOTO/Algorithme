@@ -3,7 +3,7 @@ import java.util.Vector;
 
 public class InsertionSort {
 	
-	public void sort(Vector<SortBase> dst, SortBase.Order order)
+	public static void sort(Vector<SortBase> dst, SortBase.Order order)
 	{
 		for(int now = 1; now < dst.size(); ++now)
 		{
