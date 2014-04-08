@@ -7,6 +7,8 @@ public interface SortBase {
 	
 	/**
 	 * @return Comparison result. 0 equals, Plus Larger, Minus Small
+	 * Use : Insertion Sort
+	 *       Median Sort
 	 */
 	public int compare(SortBase src);
 	
