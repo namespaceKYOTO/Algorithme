@@ -10,6 +10,7 @@ public interface SortBase {
 	 * Use : Insertion Sort
 	 *       Median Sort
 	 *       Quick Sort
+	 *       Selection Sort
 	 */
 	public int compare(SortBase src);
 	
