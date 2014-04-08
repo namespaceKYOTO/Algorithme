@@ -5,7 +5,7 @@ public class MedianSort {
 	
 	public static void sort(Vector<SortBase> dst, SortBase.Order order)
 	{
-		partition(dst, 0, dst.size(), order);
+		partition(dst, 0, dst.size() - 1, order);
 	}
 	
 	/**
