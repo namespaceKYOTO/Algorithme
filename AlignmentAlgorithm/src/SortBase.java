@@ -11,6 +11,7 @@ public interface SortBase {
 	 *       Median Sort
 	 *       Quick Sort
 	 *       Selection Sort
+	 *       HeapSort
 	 */
 	public int compare(SortBase src);
 	
