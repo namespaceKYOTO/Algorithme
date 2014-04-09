@@ -18,8 +18,17 @@ public interface SortBase {
 	/**
 	 * @return Evaluation value
 	 * Please return a small value as the one that comes first in ascending order when aligning.
+	 * unique
 	 * Use : Counting Sort
 	 */
 	public int evaluationValue();
+	
+	/**
+	 * @return 
+	 * Please return a small value as the one that comes first in ascending order when aligning.
+	 * not unique
+	 * Use : Bucket Sort
+	 */
+	public int orderHash();
 
 }
