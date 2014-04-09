@@ -11,13 +11,14 @@ public interface SortBase {
 	 *       Median Sort
 	 *       Quick Sort
 	 *       Selection Sort
-	 *       HeapSort
+	 *       Heap Sort
 	 */
 	public int compare(SortBase src);
 	
 	/**
 	 * @return Evaluation value
 	 * Please return a small value as the one that comes first in ascending order when aligning.
+	 * Use : Counting Sort
 	 */
 	public int evaluationValue();
 
