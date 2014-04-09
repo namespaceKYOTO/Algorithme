@@ -6,7 +6,7 @@ public interface SortBase {
 	}
 	
 	/**
-	 * @return Comparison result. 0 equals, Plus Larger, Minus Small
+	 * @return Comparison result. 0 this == src, Plus  this > src, Minus  this < src
 	 * Use : Insertion Sort
 	 *       Median Sort
 	 *       Quick Sort
