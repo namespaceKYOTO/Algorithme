@@ -13,6 +13,7 @@ public interface AlgorithmBase {
 	 *       Quick Sort
 	 *       Selection Sort
 	 *       Heap Sort
+	 *       Binary Search
 	 */
 	public int compare(AlgorithmBase src);
 	
