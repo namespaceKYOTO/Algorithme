@@ -1,21 +1,24 @@
+package Alignment;
+
 import java.util.Vector;
+import Common.AlgorithmBase;
 
 
 public class QuickSort {
 	
-	public static void sort(Vector<SortBase> dst, SortBase.Order order)
+	public static void sort(Vector<AlgorithmBase> dst, AlgorithmBase.Order order)
 	{
 		partition(dst, 0, dst.size() - 1, order);
 	}
 
-	private static void partition(Vector<SortBase> dst, int left, int right, SortBase.Order order)
+	private static void partition(Vector<AlgorithmBase> dst, int left, int right, AlgorithmBase.Order order)
 	{
 		if(right <= left) { return; }
 		
-		SortBase pivotObj = null;
-		SortBase rightObj = null;
-		SortBase storeObj = null;
-		SortBase iObj = null;
+		AlgorithmBase pivotObj = null;
+		AlgorithmBase rightObj = null;
+		AlgorithmBase storeObj = null;
+		AlgorithmBase iObj = null;
 		
 		int pivot = (left + right) / 2;
 		pivotObj = dst.get(pivot);
@@ -25,8 +28,8 @@ public class QuickSort {
 		
 		int store = left;
 		for(int i = left; i < right; ++i) {
-			if(order == SortBase.Order.Ascending_Order && rightObj.compare(dst.get(i)) <= 0
-			|| order == SortBase.Order.Descending_Order && rightObj.compare(dst.get(i)) >= 0
+			if(order == AlgorithmBase.Order.Ascending_Order && rightObj.compare(dst.get(i)) <= 0
+			|| order == AlgorithmBase.Order.Descending_Order && rightObj.compare(dst.get(i)) >= 0
 			){
 				// swap
 				iObj = dst.get(i);

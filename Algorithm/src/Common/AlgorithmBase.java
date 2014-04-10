@@ -1,5 +1,6 @@
+package Common;
 
-public interface SortBase {
+public interface AlgorithmBase {
 	enum Order {
 		Ascending_Order,
 		Descending_Order,
@@ -13,7 +14,7 @@ public interface SortBase {
 	 *       Selection Sort
 	 *       Heap Sort
 	 */
-	public int compare(SortBase src);
+	public int compare(AlgorithmBase src);
 	
 	/**
 	 * @return Evaluation value
