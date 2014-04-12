@@ -9,7 +9,7 @@ public class BucketSort {
 	{
 		Vector<Vector<AlgorithmBase>> bucket = new Vector<Vector<AlgorithmBase>>(maxHashValue);
 		for (AlgorithmBase sb : dst) {
-			int hash = ((order == AlgorithmBase.Order.Ascending_Order) ? sb.orderHash() : maxHashValue - sb.orderHash());
+			int hash = ((order == AlgorithmBase.Order.Ascending_Order) ? sb.hashCode() : maxHashValue - sb.hashCode());
 			if(bucket.get(hash) == null) {
 				bucket.set(hash, new Vector<AlgorithmBase>());
 			}

@@ -30,7 +30,8 @@ public interface AlgorithmBase {
 	 * Please return a small value as the one that comes first in ascending order when aligning.
 	 * not unique
 	 * Use : Bucket Sort
+	 *       Hash Search
 	 */
-	public int orderHash();
+	public int hashCode();
 
 }
